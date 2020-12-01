@@ -2,9 +2,7 @@
 
 -  The objective of this project is to develop a solution for the Kaggle competition to forecast 3 months of sales of items in different stores
 
-# Competion
-
-## Description
+# Competion Description
 
 This competition is provided as a way to explore different time series techniques on a relatively simple and clean dataset.
 
