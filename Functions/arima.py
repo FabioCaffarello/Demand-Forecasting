@@ -1,13 +1,4 @@
-# if __init__:
-# 	from statsmodels.tsa.stattools import adfuller
-
-# def read_libraries(self):
-# 	def libraries(self):
-# 		from statsmodels.tsa.stattools import adfuller
-		
-# 	return libraries
-
-# @read_libraries
+from statsmodels.tsa.stattools import adfuller
 
 def adfuller_test(sales):
 	'''
@@ -24,7 +15,6 @@ def adfuller_test(sales):
 	Text (Print)
 	'''
 	
-	from statsmodels.tsa.stattools import adfuller
 	
 	result=adfuller(sales)
 	labels = ['ADF Test Statistic','p-value','#Lags Used','Number of Observations Used']
@@ -36,9 +26,5 @@ def adfuller_test(sales):
 		print("weak evidence against null hypothesis, time series has a unit root, indicating it is non-stationary ")
 
 
-
-#if __name__ == '__main__':
-# def __init__(self):
-# 	self.read_libraries()
 
 
