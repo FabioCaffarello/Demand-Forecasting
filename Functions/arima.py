@@ -1,5 +1,6 @@
 from statsmodels.tsa.stattools import adfuller
 import matplotlib.pyplot as plt
+import pandas as pd
 
 
 
@@ -57,7 +58,7 @@ def rollingStatsPlot(timeseries, window = 12):
 	
 	#Plot rolling statistics:
 	with plt.style.context('seaborn-dark-palette'):
-		fig = plt.figure(figsize=(12, 8))
+		fig = plt.figure(figsize=(16, 9))
 		orig = plt.plot(timeseries, linewidth=2, label='Original')
 		mean = plt.plot(rollmean, linewidth=2, label='Rolling Mean')
 		std = plt.plot(rollstd, linewidth=2, label = 'Rolling Std')
